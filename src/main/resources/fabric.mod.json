@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "nihoa-client",
+	"version": "${version}",
+	"name": "Nihoa Client",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"7A7z"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/nihoa-client/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nihoa.NihoaClient"
+		],
+		"client": [
+			"com.nihoa.NihoaClientClient"
+		],
+		"fabric-datagen": [
+			"com.nihoa.NihoaClientDataGenerator"
+		]
+	},
+	"mixins": [
+		"nihoa-client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
